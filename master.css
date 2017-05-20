@@ -1,0 +1,95 @@
+body, html{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/*=====  Intro */
+.intro{
+  max-width: 360px;
+  padding-left: 100px;
+  min-height: 100%;
+}
+.intro .logo{
+  width: 100px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.intro h1{
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+}
+.intro p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  margin-bottom: 30px;
+}
+.intro a.takumi{
+  background-color: #a67a2e;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.intro a.takumi:hover{
+  opacity: 0.8;
+}
+.intro span.mr{
+  font-style: italic;
+  font-weight: 400;
+}
+.intro p.ferilskra{
+  color: #6a7f93;
+}
+.intro p.ferilskra a{
+  color: inherit;
+}
+.intro p.ferilskra a:hover{
+  text-decoration: line-through;
+  color: black;
+}
+
+@media (max-width: 560px) {
+  .intro{
+    width: 100%;
+    padding:15px;
+    box-sizing: border-box;
+    max-width: none;
+  }
+  .intro .logo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+/*===== Footer */
+.footer{
+  padding-left: 100px;
+  box-sizing: border-box;
+  padding-bottom: 70px;
+}
+.footer .logo{
+  height: 25px;
+}
+.footer p{
+  font-size: 11px;
+  line-height: 15px;
+}
+.footer p span{
+  font-weight: 500;
+}
+.footer a{
+  color: black;
+}
+@media (max-width: 560px) {
+  .footer{
+    width: 100%;
+    padding:15px;
+    box-sizing: border-box;
+    max-width: none;
+  }
+}

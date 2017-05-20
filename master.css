@@ -44,6 +44,7 @@ body, html{
 }
 .intro p.ferilskra{
   color: #6a7f93;
+  padding-top: 30px;
 }
 .intro p.ferilskra a{
   color: inherit;

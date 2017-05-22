@@ -10,7 +10,7 @@ body, html{
 .intro{
   max-width: 360px;
   padding-left: 100px;
-  min-height: 100%;
+  min-height: 90%;
 }
 .intro .logo{
   width: 100px;
@@ -46,6 +46,7 @@ body, html{
 .intro p.ferilskra{
   color: #6a7f93;
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 .intro p.ferilskra a{
   color: inherit;
@@ -58,13 +59,37 @@ body, html{
 @media (max-width: 560px) {
   .intro{
     width: 100%;
-    padding:15px;
+    padding:30px;
     box-sizing: border-box;
     max-width: none;
   }
   .intro .logo{
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
+  }
+}
+
+
+/*===== Projects*/
+.verkefni{
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+.verkefni img{
+  width: 25%;
+  float: left;
+  transition: all 0.5s;
+  position: relative;
+}
+.verkefni img:hover{
+  transform: scale(1.1);
+  z-index: 10;
+}
+@media (max-width: 560px) {
+  .verkefni img{
+    width: 50%;
   }
 }
 
@@ -90,7 +115,7 @@ body, html{
 @media (max-width: 560px) {
   .footer{
     width: 100%;
-    padding:15px;
+    padding:30px;
     box-sizing: border-box;
     max-width: none;
   }

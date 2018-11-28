@@ -1,121 +1,167 @@
-body, html{
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   -webkit-text-size-adjust: 100%;
 }
 
-/*=====  Intro */
-.intro{
-  max-width: 360px;
-  padding-left: 100px;
-  min-height: 90%;
+.intro a {
+  background-color: rgb(247, 245, 236);
+  padding: 2px;
+  border-radius: 2px;
+  color: rgb(82, 68, 47);
+  text-decoration: none;
 }
-.intro .logo{
+
+.intro a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: line-through;
+}
+
+/*=====  Intro */
+.intro {
+  max-width: 500px;
+  padding: 0 100px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 80%;
+}
+.intro .logo {
   width: 100px;
   margin-top: 80px;
   margin-bottom: 40px;
 }
-.intro h1{
+.intro h1 {
   font-size: 24px;
   letter-spacing: 1.2px;
   margin-bottom: 30px;
 }
-.intro p{
+.intro p {
   font-size: 14px;
   font-weight: 300;
   line-height: 23px;
   letter-spacing: 0.1px;
   margin-bottom: 30px;
 }
-.intro a.takumi{
+.intro a.takumi {
   background-color: #a67a2e;
   color: white;
   padding: 3px;
   text-decoration: none;
   border-radius: 2px;
 }
-.intro a.takumi:hover{
+.intro a.takumi:hover {
   opacity: 0.8;
 }
-.intro span.mr{
+.intro span.mr {
   font-style: italic;
   font-weight: 400;
 }
-.intro p.ferilskra{
+.intro p.ferilskra {
   color: #6a7f93;
   padding-top: 30px;
   margin-bottom: 30px;
 }
-.intro p.ferilskra a{
+.intro p.ferilskra a {
   color: inherit;
+  padding: 0;
+  background-color: transparent;
 }
-.intro p.ferilskra a:hover{
+.intro p.ferilskra a:hover {
   text-decoration: line-through;
   color: black;
 }
 
 @media (max-width: 560px) {
-  .intro{
+  .intro {
     width: 100%;
-    padding:30px;
+    padding: 30px;
     box-sizing: border-box;
     max-width: none;
   }
-  .intro .logo{
+  .intro .logo {
     margin-top: 0px;
     margin-bottom: 20px;
   }
 }
 
-
 /*===== Projects*/
-.verkefni{
+.verkefni {
   overflow: hidden;
   width: 100%;
   padding-bottom: 80px;
   padding-top: 20px;
 }
-.verkefni img{
+.verkefni img {
   width: 25%;
   float: left;
   transition: all 0.5s;
   position: relative;
 }
-.verkefni img:hover{
+/* .verkefni img:hover {
   transform: scale(1.1);
   z-index: 10;
-}
+} */
 @media (max-width: 560px) {
-  .verkefni img{
+  .verkefni img {
     width: 50%;
   }
 }
 
+/*===== Cheers */
+.bottom {
+  margin-bottom: 50px;
+}
+
+.profile {
+  width: 120px;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.github {
+  background-color: rgb(247, 236, 243);
+  padding: 2px;
+  border-radius: 2px;
+  color: rgb(82, 47, 47);
+  text-decoration: none;
+}
+
+.github:hover {
+  background-color: black;
+  color: white;
+  text-decoration: line-through;
+}
+
 /*===== Footer */
-.footer{
+.footer {
   padding-left: 100px;
   box-sizing: border-box;
   padding-bottom: 70px;
 }
-.footer .logo{
+.footer .logo {
   height: 25px;
 }
-.footer p{
+.footer p {
   font-size: 11px;
   line-height: 15px;
 }
-.footer p span{
+.footer p span {
   font-weight: 500;
 }
-.footer a{
+.footer a {
   color: black;
 }
 @media (max-width: 560px) {
-  .footer{
+  .footer {
     width: 100%;
-    padding:30px;
+    padding: 30px;
     box-sizing: border-box;
     max-width: none;
   }

@@ -17,6 +17,9 @@
     </script>
   </head>
   <body>
+    <div class="anim">
+      <img src="./anim_no_loop.gif" onLoad="onAnimLoad()" />
+    </div>
     <div class="intro">
       <img class="logo" src="logo.svg" alt="VÖK logo">
       <h1>Ég heiti Valtýr Örn</h1>
@@ -47,5 +50,23 @@
       <img class="logo" src="https://ci5.googleusercontent.com/proxy/kqIwSCHk4Y1a0PSjopQVAQfBGFCABSF3GNck0E137cE2TwFlXmwWdeyJYNvqeQnUQ7AtrBMZnmwzCPvZQBhPO5_5xlljNNU0_8i2MNKClgfLNXzFw0EDuyTN1yj5LZTfRUdtGzPsVu2vtb4cXFkJ3AS49BtxpeGBs4ZgOsjjwqvVXaXANVNw9JmFXewFxa-la1kvOG-Hj_dXUwU=s0-d-e1-ft#https://docs.google.com/uc?export=download&id=0B_3mXQCTXPkHMGxwVWd2RmM2ZlE&revid=0B_3mXQCTXPkHd1EvcVYxa09WdFg1dzdMamxSZmpNZ011QU9BPQ" alt="VÖK logo">
       <p><span>Valtýr Örn Kjartansson</span> <br> 857-8037 | valtyr.is <br> valtyr@gmail.com <br> <a href="http://m.me/valtyr" target="_blank">m.me/valtyr</a></p>
     </div>
+
+    <script>
+      const anim = document.querySelector('.anim');
+      const played = window.sessionStorage.getItem('PLAYED') === 'true';
+      
+      if (played)
+        anim.style.display = 'none';
+      else {
+        window.sessionStorage.setItem('PLAYED', 'true');
+        anim.addEventListener('animationend', () => {
+          anim.style.display = 'none';
+        });
+      }
+
+      const onAnimLoad = () => {
+        window.setTimeout(() => anim.classList.add('fadeOut'), 2300);
+      }
+    </script>
   </body>
 </html>

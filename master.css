@@ -89,6 +89,12 @@ html {
 .intro a.takumi:hover {
   opacity: 0.8;
 }
+.intro a.avo {
+  background-color: #fee9f6;
+}
+.intro a.avo:hover {
+  background-color: black;
+}
 .intro span.mr {
   font-style: italic;
   font-weight: 400;
